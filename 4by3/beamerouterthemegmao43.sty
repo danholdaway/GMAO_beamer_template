@@ -1,0 +1,39 @@
+\mode<presentation>
+
+\usepackage[skins]{tcolorbox}
+\usepackage{anyfontsize}
+
+% Frame title
+\defbeamertemplate*{frametitle}{gmao43}[1][]
+{
+\newrgbcolor{grey}{0.50 0.50 0.50}
+\newrgbcolor{nasablue}{0.0 0.24 0.57}
+\vskip0.05cm%
+  \begin{beamercolorbox}[wd=\paperwidth,ht=1.5cm]{frametitle} 
+  \begin{tikzpicture}
+  \useasboundingbox[fill=white](0,0) rectangle(\the\paperwidth,0.9);
+  \shade[left color=white,right color=white,middle color =white] (0,0) rectangle(11.65,0.9);
+  \path[fill stretch image=nasa.png] (11.65,0) rectangle(\the\paperwidth,0.9);
+  \node[anchor=west, white,font=\large] at (0.15,0.45){{\grey \fontsize{6pt}{6pt}\selectfont National Aeronautics and Space Administration}};
+  \end{tikzpicture}
+   \centering{\nasablue \insertframetitle}
+  \end{beamercolorbox}
+}
+
+\defbeamertemplate*{footline}{gmao169}[1]{
+\newrgbcolor{grey}{0.50 0.50 0.50}
+\setbeamercolor{box}{fg=white,bg=grey}
+\leavevmode
+\begin{beamercolorbox}[wd=1\paperwidth,ht=6mm,sep=0.5em]{box}
+\begin{minipage}{14mm}
+\includegraphics[width=12mm]{GMAO.png}
+\end{minipage}
+\begin{minipage}{100mm}
+{\fontsize{6pt}{6pt}\selectfont Global Modeling and Assimilation Office\newline gmao.gsfc.nasa.gov}
+\end{minipage}
+\end{beamercolorbox}
+}
+
+
+
+\mode<all>

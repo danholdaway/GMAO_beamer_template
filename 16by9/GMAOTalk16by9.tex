@@ -1,0 +1,68 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{gmao169}
+
+%Required packages
+\usepackage{pstricks}
+\usepackage{color}
+
+%Begin document
+\begin{document}
+
+%Title color matched to NASA Meatball Blue
+\newrgbcolor{titlecolor}{0.0 0.4 0.57}
+\setbeamercolor{frametitle}{fg=titlecolor}
+
+%No footer on title page
+{\setbeamertemplate{footline}{}
+
+%Make custom title page rather than Beamer style
+\begin{frame} 
+
+%Title
+\vspace{5mm}
+\begin{center}
+{\Large {\titlecolor Great GMAO work} } 
+\end{center}
+
+%Authors
+\vspace{-5mm}
+\begin{center}
+Gmao Employee 
+\end{center}
+
+%Conference info and date
+\begin{center}
+\footnotesize{Highly prestigious conference \\ Monday 1st January, 2018}
+\end{center}
+
+\vspace{0.25mm}
+
+%Logos of organistations
+\begin{center}
+\begin{figure}
+\includegraphics[height=1.5cm]{nasa.png}\hspace{1.5cm}\includegraphics[height=1.5cm]{GESTAR.pdf}\hspace{1.5cm}\includegraphics[height=1.5cm]{SSAI.jpg}
+\end{figure}
+\end{center}
+
+\end{frame}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}\frametitle{Typical slide}
+
+Some information about some things:
+
+\begin{itemize}
+\item Thing 1.
+\item Thing 2.
+\item Thing 3.
+\end{itemize}
+
+Great things, I'm sure you'll agree.
+
+\end{frame}
+
+
+%End document
+\end{document}
